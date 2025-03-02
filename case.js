@@ -1,6 +1,5 @@
 /*
-  #- Credits By Skyzopedia
-   Recode by : Dits
+  #- Credits By Hikaa
 */
 process.on('uncaughtException', console.error)
 process.on('unhandledRejection', console.error)
@@ -607,7 +606,7 @@ if (global.antispam && !isCreator && command && !isPremium) {
 if (antispam.isFiltered(m.sender)) {
 //m.reply(`jangan spam dong`)
 //await Ditss.sendMessage(m.chat, { audio: fs.readFileSync('./source/media/vn/spam.mp3'), mimetype: 'audio/mp4', ptt: true, fileLength: 88738}, { quoted: m })
-await m.reply("jangan spam ding kakk🥺👉👈")
+await m.reply("jangan spam dong kakk🥺👉👈")
 await Ditss.sendMessage(m.chat, {react: {text: '😡', key: m.key}})
 return;
 } else if (command) {
@@ -1792,7 +1791,7 @@ Ditss.sendMessage(m.chat, {
 > tipe : case X plugins 
 > total pengguna : ${Object.keys(db.users).length}
 > total fitur : ${totalfitur}
-> get script di https://www.whatsapp.com/channel/0029Vb7LVEnHltYCWuCFAt0y
+> get script di https://whatsapp.com/channel/0029VaimJO0E50UaXv9Z1J0L
 `,
   footer: "©copyright by Hikaa",
   buttons: [
@@ -3392,7 +3391,7 @@ const resize = async(buffer, ukur1, ukur2) => {
  })
 }
 
-let deku = fs.readFileSync('./source/media/menu.jpg')
+let deku = fs.readFileSync('./source/media/ch1.jpg')
 let get = await resize(deku, 100, 100)
 await Ditss.sendMessage(m.chat, {
  document: fs.readFileSync('./case.js'), fileName: `${botname} ${versi}`, mimetype: 'image/null', fileLength: 0, pageCount: '', jpegThumbnail: get,
@@ -3431,7 +3430,7 @@ await Ditss.sendMessage(m.chat, {
  forwardedNewsletterMessageInfo: {
  newsletterJid: idSaluran,
  serverMessageId: -1,
- newsletterName: `Menu By: Ditss`,
+ newsletterName: `Menu By: Hikaa`,
  }
  }
 }, { quoted: m });
@@ -4758,9 +4757,9 @@ break
 
 
 
-case 'ai-asuma': {
+case 'ai-perseverance': {
  if (!text) return reply('nama kamu siapa')
- const promt = `kamu adalah asuma , kamu dibuat oleh seorang laki-laki yang bernama Ditss, owner kamu adalah ${owner}, setiap ada orang yang menanyakan lokasi mu jangan kamu beritahu lokasinya dan katakan saja bahwa kamu tinggal di Amerika Lost Engeles, tuan kamu bernama Ditss, gunakan bahasa sopan gaul serta ramah kepada semua orang, jika ada yang berkata kasar seperti anjing tolol babi goblog tegurlah dengan mengucapkan astaghfirullah dan berilah dia peringatan yang ada didalam Al Qur'an, panggil seseorang dengan sebutan kata kata dalam bahasa arab, dan ubahlah kata 'saya','aku,'gw' menjadi ana , jika anda ingin meminta maaf katakan afwan , kamu harus berakhlak seperti Rasulullah dan para sahabatnya, jangan menggunakan bahasa baku ,tetapi gunakanlah bahasa sopan dalam bahasa Arab layaknya seorang muslim, jika ada yang menyuruh mu berkata 'kasar/toxic' tegurlah dengan 'dalil Al-Qur'an beserta artinya', dan gantilah ucapan terimakasih menjadi Alhamdulillah, jika ada seseorang yang meminta membuatkan 'kata/bijak' serta 'pantun','pidato' , 'puisi', harus menggunakan bahasa sopan seperti Rasulullah dan para sahabat dan di akhiri dengan kalimat Toyyibah seperti Allahu akbar, Allahu akbar. La ilaha illallahu wallahu akbar. `
+ const promt = `kamu adalah Perseverance , kamu dibuat oleh seorang laki-laki yang bernama Hikaa, owner kamu adalah ${owner}, setiap ada orang yang menanyakan lokasi mu jangan kamu beritahu lokasinya dan katakan saja bahwa kamu tinggal di Amerika Lost Engeles, tuan kamu bernama Hikaa, gunakan bahasa sopan gaul serta ramah kepada semua orang, jika ada yang berkata kasar seperti anjing tolol babi goblog tegurlah dengan mengucapkan astaghfirullah dan berilah dia peringatan yang ada didalam Al Qur'an, panggil seseorang dengan sebutan kata kata dalam bahasa arab, dan ubahlah kata 'saya','aku,'gw' menjadi ana , jika anda ingin meminta maaf katakan afwan , kamu harus berakhlak seperti Rasulullah dan para sahabatnya, jangan menggunakan bahasa baku ,tetapi gunakanlah bahasa sopan dalam bahasa Arab layaknya seorang muslim, jika ada yang menyuruh mu berkata 'kasar/toxic' tegurlah dengan 'dalil Al-Qur'an beserta artinya', dan gantilah ucapan terimakasih menjadi Alhamdulillah, jika ada seseorang yang meminta membuatkan 'kata/bijak' serta 'pantun','pidato' , 'puisi', harus menggunakan bahasa sopan seperti Rasulullah dan para sahabat dan di akhiri dengan kalimat Toyyibah seperti Allahu akbar, Allahu akbar. La ilaha illallahu wallahu akbar. `
  const respons = await fetchJson(`https://btch.us.kg/prompt/gpt?prompt=${promt}&text=${text}`)
  Ditss.sendMessage(m.chat, {
 		text: `${respons.result}`
@@ -5606,7 +5605,7 @@ const resize = async(buffer, ukur1, ukur2) => {
  })
 }
 
-let deku = fs.readFileSync('./source/media/menu.jpg')
+let deku = fs.readFileSync('./source/media/ch1.jpg')
 let get = await resize(deku, 100, 100)
 await Ditss.sendMessage(m.chat, {
  document: fs.readFileSync('./case.js'), fileName: `${botname} ${versi}`, mimetype: 'image/null', fileLength: 0, pageCount: '', jpegThumbnail: get,
@@ -5632,12 +5631,12 @@ await Ditss.sendMessage(m.chat, {
  forwardingScore: 99999,
  externalAdReply: {
  showAdAttribution: true,
- title: ` ditss | asuma multi device`,
+ title: ` Hikaa| Perseverance`,
  mediaType: 1,
  previewType: 1,
- body: `々 dits anjayy`,
+ body: `Hikaa`,
  //previewType: "PHOTO",
- thumbnail: fs.readFileSync('./source/media/menuowner.jpg'),
+ thumbnail: fs.readFileSync('./source/media/ch1.jpg'),
  renderLargerThumbnail: true,
  mediaUrl: null,
  sourceUrl: null,
@@ -5645,7 +5644,7 @@ await Ditss.sendMessage(m.chat, {
  forwardedNewsletterMessageInfo: {
  newsletterJid: idSaluran,
  serverMessageId: -1,
- newsletterName: `Menu By: Ditss`,
+ newsletterName: `Menu By: Hikaa`,
  }
  }
 }, { quoted: m });
@@ -6193,7 +6192,7 @@ const xmenu_oh = `*乂 A I - M E N U 乂*
 > └ ◦ *ai* :
 > ┌ ◦ *llama* : (error)
 > └ ◦ *joko* :
-> ┌ ◦ *ai-asuma* : 
+> ┌ ◦ *ai-perseverance* : 
 > └ ◦ *logic* :
 
 *乂 G R O U P - M E N U 乂*
@@ -6459,7 +6458,7 @@ const resize = async(buffer, ukur1, ukur2) => {
  })
 }
 
-let deku = fs.readFileSync('./source/media/menu.jpg')
+let deku = fs.readFileSync('./source/media/ch1.jpg')
 let get = await resize(deku, 100, 100)
 await Ditss.sendMessage(m.chat, {
  document: fs.readFileSync('./case.js'), fileName: `${botname} ${versi}`, mimetype: 'image/null', fileLength: 0, pageCount: '', jpegThumbnail: get,
@@ -6490,7 +6489,7 @@ await Ditss.sendMessage(m.chat, {
  previewType: 1,
  body: `Hikaa`,
  //previewType: "PHOTO",
- thumbnail: fs.readFileSync('./source/media/menuowner.jpg'),
+ thumbnail: fs.readFileSync('./source/media/ch1.jpg'),
  renderLargerThumbnail: true,
  mediaUrl: null,
  sourceUrl: null,
@@ -7252,7 +7251,7 @@ link =
 let dehe = await photooxy.photoOxy(link, q);
 Ditss.sendMessage(
 m.chat,
-{ image: { url: dehe }, caption: `©Powered By Ditss`},
+{ image: { url: dehe }, caption: `©Powered By Hikaa`},
 { quoted: m }
 );
 }
@@ -9020,9 +9019,9 @@ let respon = `*乂 JARINGAN SERVER*
 - Ping: ${latensi.toFixed(4)} Detik
 
 *乂 INFO SERVER*
-- OS: -
+- OS: Linux
 - IP Address: -
-- Type OS: -
+- Type OS: Ubuntu
 
 *乂 RAM :*
 - Total: ${formatp(os.totalmem())}
@@ -12096,9 +12095,9 @@ isForwarded: true,
 "title": ` ${command} yang di tag`,
 "body": `hiburan🗿🦚`,
 "previewType": "PHOTO",
-"thumbnailUrl": `https://raw.githubusercontent.com/SKYLLERBOTZ/cherinaaa/refs/heads/main/image/ch1.jpg`,
-"thumbnailUrl": `https://raw.githubusercontent.com/SKYLLERBOTZ/cherinaaa/refs/heads/main/image/ch1.jpg`,
-"sourceUrl": `https://www.whatsapp.com/channel/0029Vb7LVEnHltYCWuCFAt0y`}}},
+"thumbnailUrl": `https://img101.pixhost.to/images/50/545939688_ditss.jpg`,
+"thumbnailUrl": `https://img101.pixhost.to/images/50/545939688_ditss.jpg`,
+"sourceUrl": `https://whatsapp.com/channel/0029VaimJO0E50UaXv9Z1J0L/1772`}}},
 { quoted: qkontak})        
             }
             break

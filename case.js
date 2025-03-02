@@ -15,7 +15,9 @@ const cron = require('node-cron');
 const axios = require('axios');
 const chalk = require('chalk');
 const yts = require('yt-search');
-const ytdl = require('@vreden/youtube_scraper');
+const ytdl = require("@distube/ytdl-core");
+const ffmpeg = require("fluent-ffmpeg");
+
 const speed = require('performance-now');
 const moment = require("moment-timezone");
 
@@ -10975,22 +10977,57 @@ break
 
 //===============================================================================
 
-case "ytmp3": {
-if (!text) return m.reply(example("linknya"))
-if (!text.startsWith("https://")) return m.reply("Link Tautan Tidak Valid")
-await Ditss.sendMessage(m.chat, {react: {text: '🕖', key: m.key}})
+        case "ytmp3": {
+            if (!text) return m.reply("Masukkan link YouTube!");
+            if (!text.startsWith("https://")) return m.reply("Link tidak valid!");
 
-var anu = await ytdl.ytmp3(`${text}`)
+            await Ditss.sendMessage(m.chat, { react: { text: '🕖', key: m.key } });
 
-if (anu.status) {
-let urlMp3 = anu.download.url
-await Ditss.sendMessage(m.chat, {audio: {url: urlMp3}, mimetype: "audio/mpeg"}, {quoted: m})
-} else {
-return m.reply("Error! Result Not Found")
-}
-await Ditss.sendMessage(m.chat, {react: {text: '', key: m.key}})
-}
-break
+            try {
+                console.log("DEBUG: Mengambil data dari ytdl dengan link:", text);
+
+                let info = await ytdl.getInfo(text);
+                let format = ytdl.chooseFormat(info.formats, { quality: "highestaudio" });
+
+                if (!format || !format.url) return m.reply("Error! Lagu tidak ditemukan.");
+
+                console.log("DEBUG: URL Audio =", format.url);
+
+                let outputPath = "./temp/audio.mp3"; // Simpan sebagai MP3
+                let tempPath = "./temp/audio.webm"; // Simpan sementara
+
+                // Download audio dalam format WebM
+                exec(`wget -O ${tempPath} "${format.url}"`, async (err) => {
+                    if (err) {
+                        console.error("DEBUG: Error saat download audio:", err);
+                        return m.reply("Terjadi kesalahan saat mengunduh audio.");
+                    }
+
+                    // Konversi ke MP3 menggunakan ffmpeg
+                    ffmpeg(tempPath)
+                        .toFormat("mp3")
+                        .on("end", async () => {
+                            console.log("DEBUG: Konversi selesai, mengirim audio...");
+                            await Ditss.sendMessage(m.chat, { 
+                                audio: fs.readFileSync(outputPath), 
+                                mimetype: "audio/mpeg" 
+                            }, { quoted: m });
+
+                            fs.unlinkSync(tempPath); // Hapus file WebM
+                            fs.unlinkSync(outputPath); // Hapus file MP3
+                        })
+                        .on("error", (err) => {
+                            console.error("DEBUG: Error saat konversi ffmpeg:", err);
+                            return m.reply("Terjadi kesalahan saat mengonversi audio.");
+                        })
+                        .save(outputPath);
+                });
+            } catch (error) {
+                console.error("DEBUG: Error pada ytmp3:", error);
+                return m.reply("Terjadi kesalahan saat mengambil audio.");
+            }
+        }
+        break;
 
 //================================================================================
 

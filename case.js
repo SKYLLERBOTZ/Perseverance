@@ -131,7 +131,7 @@ participant : `${nomore}@s.whatsapp.net`
 },
 message: {
 newsletterAdminInviteMessage: {
-newsletterJid: '120363314209665405@newsletter@newsletter',
+newsletterJid: '120363391204793452@newsletter@newsletter',
     newsletterName: '',
     caption: body
 }}}
@@ -1528,11 +1528,11 @@ await Ditss.sendMessage(m.chat, {audio: {url: urlMp3}, mimetype: "audio/mpeg", p
 isForwarded: true, 
 mentionedJid: [m.sender],
 businessMessageForwardInfo: { 
-businessOwnerJid: "120363314209665405@newsletter"
+businessOwnerJid: "120363391204793452@newsletter"
 }, 
 forwardedNewsletterMessageInfo: {
 newsletterName: `${res.title}`,
-newsletterJid: "120363314209665405@newsletter"}
+newsletterJid: "120363391204793452@newsletter"}
 }},{quoted: m})
 } else {
 return m.reply("Error! Result Not Found")
@@ -2299,11 +2299,11 @@ Ditss.sendMessage(`${global.idch}`, {audio: await quoted.download(), mimetype: "
 isForwarded: true, 
 mentionedJid: [m.sender],
 businessMessageForwardInfo: { 
-businessOwnerJid: "120363314209665405@newsletter"
+businessOwnerJid: "120363391204793452@newsletter"
 }, 
 forwardedNewsletterMessageInfo: {
 newsletterName: `${text}`,
-newsletterJid: "120363314209665405@newsletter"}
+newsletterJid: "120363391204793452@newsletter"}
 }},{quoted: m})
 await sleep(2000)
 Ditss.sendMessage(m.chat, { react: { text: '✅', key: m.key, }})
@@ -9472,7 +9472,7 @@ async function jadwalSholat(kota) {
  forwardingScore: 2025,
  isForwarded: true,
  forwardedNewsletterMessageInfo: {
- newsletterJid: '120363314209665405@newsletter',
+ newsletterJid: '120363391204793452@newsletter',
  serverMessageId: null,
  newsletterName: `${botname2}`,
  },

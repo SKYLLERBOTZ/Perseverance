@@ -9,7 +9,7 @@ const chalk = require('chalk');
 const { version } = require("./package.json")
 
 // Settings Bot 
-global.DataPc = "120363324022728807@newsletter"
+global.DataPc = "120363391204793452@newsletter"
 //ini mo di ganti gpp mo ga di ganti gpp jugaa
 global.owner = '6285882135288'
 global.versi = version
@@ -30,20 +30,20 @@ global.game = true
 global.kirsan = true
 global.antispam = true
 global.AutoaiPrivat = false
-global.linkOwner = "https://wa.me/6285876141367"
-global.linkGrup = "https://chat.whatsapp.com/HXb23cWnYxoDD7luHHlSN4"
-global.menuStore = "https://files.catbox.moe/cy44re.jpg"
-global.pathimg = fs.readFileSync('./source/media/bibir.jpg');
-global.inutt = fs.readFileSync('./source/media/dits-pler.jpg');
-global.oleng = fs.readFileSync('./source/media/asuma.jpg');
+global.linkOwner = "https://wa.me/6285882135288"
+global.linkGrup = "https://chat.whatsapp.com/EXq5jLDdbTXEpdSikaypTi"
+global.menuStore = "https://raw.githubusercontent.com/SKYLLERBOTZ/sekola/refs/heads/main/1f8afacc-9d61-468f-945e-840e6e4e4c50.webp"
+global.pathimg = fs.readFileSync('./source/media/ch1.jpg');
+global.inutt = fs.readFileSync('./source/media/ch1.jpg');
+global.oleng = fs.readFileSync('./source/media/ch1.jpg');
 // Delay Jpm & Pushctc || 1000 = 1detik
 global.delayJpm = 3500
 global.delayPushkontak = 6000
 global.prefix = "."
 // Settings Channel / Saluran
 global.linkSaluran = "https://www.whatsapp.com/channel/0029Vb7LVEnHltYCWuCFAt0y"
-global.idSaluran = "120363324022728807@newsletter"
-global.idch = "120363324022728807@newsletter"
+global.idSaluran = "120363391204793452@newsletter"
+global.idch = "120363391204793452@newsletter"
 global.namaSaluran = "Perseverance"
 
 global.merchantIdOrderKuota = "-"
@@ -69,7 +69,7 @@ global.gopay = "085882135288"
 // Settings Image Url
 global.image = {
 menu: "https://raw.githubusercontent.com/SKYLLERBOTZ/sekola/refs/heads/main/1f8afacc-9d61-468f-945e-840e6e4e4c50.webp", 
-reply: "https://files.catbox.moe/85txse.jpg", 
+reply: "https://raw.githubusercontent.com/SKYLLERBOTZ/cherinaaa/refs/heads/main/image/ch1.jpg", 
 logo: "https://raw.githubusercontent.com/SKYLLERBOTZ/sekola/refs/heads/main/1f8afacc-9d61-468f-945e-840e6e4e4c50.webp", 
 dana: "https://tmpfiles.org/dl/21386337/tmp.jpg", 
 ovo: "https://tmpfiles.org/dl/21386337/tmp.jpg", 

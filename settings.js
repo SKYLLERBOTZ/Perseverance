@@ -69,7 +69,7 @@ global.gopay = "085882135288"
 // Settings Image Url
 global.image = {
 menu: "https://raw.githubusercontent.com/SKYLLERBOTZ/sekola/refs/heads/main/1f8afacc-9d61-468f-945e-840e6e4e4c50.webp", 
-reply: "https://raw.githubusercontent.com/SKYLLERBOTZ/cherinaaa/refs/heads/main/image/ch1.jpg", 
+reply: "https://raw.githubusercontent.com/SKYLLERBOTZ/tgs/refs/heads/main/666.jpeg", 
 logo: "https://raw.githubusercontent.com/SKYLLERBOTZ/sekola/refs/heads/main/1f8afacc-9d61-468f-945e-840e6e4e4c50.webp", 
 dana: "https://tmpfiles.org/dl/21386337/tmp.jpg", 
 ovo: "https://tmpfiles.org/dl/21386337/tmp.jpg", 

@@ -1791,7 +1791,7 @@ Ditss.sendMessage(m.chat, {
 > tipe : case X plugins 
 > total pengguna : ${Object.keys(db.users).length}
 > total fitur : ${totalfitur}
-> get script di https://whatsapp.com/channel/0029VaimJO0E50UaXv9Z1J0L
+> get script di https://whatsapp.com/channel/0029Vb7LVEnHltYCWuCFAt0y
 `,
   footer: "©copyright by Hikaa",
   buttons: [
@@ -12097,7 +12097,7 @@ isForwarded: true,
 "previewType": "PHOTO",
 "thumbnailUrl": `https://img101.pixhost.to/images/50/545939688_ditss.jpg`,
 "thumbnailUrl": `https://img101.pixhost.to/images/50/545939688_ditss.jpg`,
-"sourceUrl": `https://whatsapp.com/channel/0029VaimJO0E50UaXv9Z1J0L/1772`}}},
+"sourceUrl": `https://whatsapp.com/channel/0029Vb7LVEnHltYCWuCFAt0y/1772`}}},
 { quoted: qkontak})        
             }
             break
